@@ -1,0 +1,110 @@
+/* Import breakpoints*/
+@use "./../components/breakpoints" as *;
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 6.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__main-nav .menu-menu-1-container {
+    ul.menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.8rem;
+      list-style-type: none;
+      margin: 0;
+
+      li.menu-item {
+        position: relative;
+
+        a:link,
+        a:visited {
+          text-decoration: none;
+          border-bottom: none;
+          color: #2f3037;
+          cursor: pointer;
+        }
+
+        a:hover,
+        a:active {
+          border-bottom: 1px solid currentColor;
+        }
+
+        .icon {
+          height: 8px;
+          width: 12px;
+          stroke: #2f3037;
+          padding-left: 2px;
+        }
+
+        &:hover > ul {
+          top: 3rem;
+          opacity: 1;
+          visibility: visible;
+          transition: 0.3s linear;
+        }
+      }
+
+      ul.sub-menu {
+        position: absolute;
+        top: 3rem;
+        border-top: 3px solid #ff6b00;
+        opacity: 0;
+        visibility: hidden;
+        background-color: #23244f;
+        color: #fff;
+        list-style-type: none;
+        margin-left: 0;
+        padding: 2rem;
+
+        li.menu-item {
+          width: 150px;
+          display: list-item;
+          position: relative;
+          border-top: none;
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a:link,
+          a:visited {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__main-nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.8rem;
+  }
+  .search-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    cursor: pointer;
+  }
+
+  .phone-no {
+    margin: 0;
+  }
+
+  .btn-mobile-nav {
+    display: none;
+  }
+}

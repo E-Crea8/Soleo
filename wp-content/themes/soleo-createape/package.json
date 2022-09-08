@@ -1,0 +1,49 @@
+{
+  "name": "soleo-createape",
+  "version": "1.0.0",
+  "description": "CreateApe Coding Challenge",
+  "author": "Emmanuel Ogundare",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "Soleo WordPress Theme",
+    "CreateApe",
+    "WordPress",
+    "Theme"
+  ],
+  "homepage": "https://github.com/Automattic/_s#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automattic/_s.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Automattic/_s/issues"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^19.2.2",
+    "dir-archiver": "^1.1.1",
+    "node-sass": "^7.0.1",
+    "rtlcss": "^3.5.0",
+    "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "bootstrap": "^5.2.0",
+    "postcss-cli": "^10.0.0"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  }
+}
