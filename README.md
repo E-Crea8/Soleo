@@ -53,4 +53,5 @@ password: root
 
 ## Updates
 
-I will let you know as soon as a new version of the Cloth-Store WooCommerce Theme is available.
+I will let you know as soon as a new version of the theme is available.
+Still Working on improving the Mobile UI.
